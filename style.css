@@ -1,0 +1,81 @@
+body {
+    background-color:#FFFC00;
+    margin: 10;
+    cursor:progress
+
+}
+
+h5 {
+    color: yellowgreen;
+}
+body:hover {
+    margin: 200%;
+    background-color: #0ceb69;
+}
+p.animate-character{
+    text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #0ceb69 10%,
+    #7ba8be 29%,
+    #ff1361 67%,
+    #fff800 80%,
+    rgb(214, 30, 211) 70%
+
+  );
+  background-size: 200% auto;
+  background-clip: border-box;
+  background-clip: text;
+  color: rgb(0, 0, 0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 0.25s cubic-bezier(0.7,0.8,0.8,0.3) infinite;
+  display: flex;
+      font-size: 75px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 300% center;
+    text-transform: lowercase;
+    margin: 100px;
+  }
+}
+
+img.strobe:hover {
+margin: 10000px;
+size: 150%;
+}
+
+.gallery img {
+    height: 100%;
+    display: block;
+    
+    flex: 6;
+    object-fit: cover;
+    cursor: wait;
+    border-radius: 275px;
+    transition: all 5s;
+    margin-inline-end: 3rem;
+}
+
+.gallery img:hover {
+    border-radius: 300%;
+    flex: 20;
+    margin-inline-end: 10rem;
+    margin: 5000rem;
+    size: 180%;
+}
+
+marquee {
+    color: white;
+    font-size: 30px;
+    display: inline-block;
+    width: 300px;
+}
+
+marquee:hover {
+    margin: 200px;
+    size: 40rem;
+}
+
